@@ -1,0 +1,35 @@
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:174:12)\n    at send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\routes\\returns.js:15:30)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:174:12)\n    at send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\routes\\returns.js:15:30)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:174:12)\n    at send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\routes\\returns.js:15:30)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:174:12)\n    at send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\routes\\returns.js:15:30)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","message":"Cannot set headers after they are sent to the client Cannot set headers after they are sent to the client","stack":"Error: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\node_modules\\express\\lib\\response.js:174:12)\n    at send (D:\\New folder\\Programming\\JavaScript\\node-demo\\vidly\\routes\\returns.js:15:30)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Listening to PORT Number 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests"}
