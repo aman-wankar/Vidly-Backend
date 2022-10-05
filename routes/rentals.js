@@ -8,14 +8,14 @@ const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
-Fawn.init(mongoose);
+Fawn.init("mongodb://127.0.0.1:27017/vidly");
 
 router.get("/", async (req, res) => {
     const rentals = await Rental.find().sort("-dateOut");
     res.send(rentals);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", validate(validateRental),async (req, res) => {
     const customer = await Customer.findById(req.body.customerId);
     if (!customer) return res.status(400).send("Invalid Customer.");
 
