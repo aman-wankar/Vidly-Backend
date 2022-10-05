@@ -8,7 +8,7 @@ const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
-Fawn.init(mongoose);
+Fawn.init("mongodb+srv://amanwankar:Pass%40123@cluster0.xlcax.mongodb.net/?retryWrites=true");
 
 router.get("/", async (req, res) => {
     const rentals = await Rental.find().sort("-dateOut");
