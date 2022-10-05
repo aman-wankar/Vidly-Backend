@@ -8,14 +8,14 @@ const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
-Fawn.init("mongodb+srv://amanwankar:Pass%40123@cluster0.xlcax.mongodb.net/test");
+Fawn.init("mongodb+srv://amanwankar:Pass%40123@cluster0.xlcax.mongodb.net/?retryWrites=true");
 
 router.get("/", async (req, res) => {
     const rentals = await Rental.find().sort("-dateOut");
     res.send(rentals);
 });
 
-router.post("/", validate(validateRental),async (req, res) => {
+router.post("/", async (req, res) => {
     const customer = await Customer.findById(req.body.customerId);
     if (!customer) return res.status(400).send("Invalid Customer.");
 
