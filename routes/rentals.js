@@ -3,12 +3,12 @@ const validateObjectId = require("../middleware/validateObjectId");
 const { Rental, validateRental } = require("../models/rental");
 const { Movie } = require("../models/movie");
 const { Customer } = require("../models/customer");
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
-Fawn.init(mongoose);
+Fawn.init("mongodb://127.0.0.1:27017/vidly");
 
 router.get("/", async (req, res) => {
     const rentals = await Rental.find().sort("-dateOut");
