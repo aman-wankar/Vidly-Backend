@@ -8,7 +8,7 @@ const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
-Fawn.init("mongodb://127.0.0.1:27017/vidly");
+Fawn.init(mongoose);
 
 router.get("/", async (req, res) => {
     const rentals = await Rental.find().sort("-dateOut");
@@ -46,7 +46,6 @@ router.post("/", validate(validateRental),async (req, res) => {
                 { $inc: { numberInStock: -1 } }
             )
             .run();
-
         res.send(rental);
     } catch (ex) {
         res.status(500).send("Something failed.");
