@@ -64,6 +64,7 @@ const { Rental, validateRental } = require("../models/rental");
 const { Movie } = require("../models/movie");
 const { Customer } = require("../models/customer");
 var mongoose = require("mongoose");
+var { startSession } = require("mongoose");
 const express = require("express");
 const router = express.Router();
 
@@ -94,19 +95,19 @@ router.post("/", validate(validateRental), async (req, res) => {
       dailyRentalRate: movie.dailyRentalRate,
     },
   });
-  async function transaction() {
-    const session = mongoose.startSession();
+  const session = await startSession();
+  try {
     session.startTransaction();
-    await rental.save(session);
-    await Movie.findOneAndUpdate(
-      { _id: movie._id },
-      { $inc: { numberInStock: -1 } }
-    );
+    await Rental.create([rental], { session });
     await session.commitTransaction();
     session.endSession();
-    res.send(rental)
+    res.send(rental);
+  } catch (err) {
+    await session.abortTransaction();
+    session.endSession();
+    console.log(err);
+    res.send("Error");
   }
-  transaction();
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
