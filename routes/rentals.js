@@ -99,7 +99,11 @@ router.post("/", validate(validateRental), async (req, res) => {
   try {
     session.startTransaction();
     await Rental.create([rental], { session });
-    await Movie.updateOne({ _id: movie._id }, { $inc: { numberInStock: -1 } }, {session});
+    await Movie.updateOne(
+      { _id: movie._id },
+      { $inc: { numberInStock: -1 } },
+      { session }
+    );
     await session.commitTransaction();
     session.endSession();
     res.send(rental);
