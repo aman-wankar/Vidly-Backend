@@ -12,13 +12,13 @@ const config = require("config");
 // };
 // app.use(cors(corsOptions));
 
-const cors = require("cors");
-const corsOptions = {
-  origin: "https://vidly-zeta.vercel.app",
-  credentials: true,
-  optionSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
+// const cors = require("cors");
+// const corsOptions = {
+//   origin: "https://vidly-zeta.vercel.app",
+//   credentials: true,
+//   optionSuccessStatus: 200,
+// };
+// app.use(cors(corsOptions));
 
 require("./startup/logging")();
 require("./startup/routes")(app);
